@@ -1,0 +1,23 @@
+import { Story, Meta, ComponentStory, ComponentMeta } from '@storybook/react'
+import {{pascalCase name}}, { {{pascalCase name}}Props } from '.'
+
+export default {
+  /* 👇 The title prop is optional.
+  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+  * to learn how to generate automatic titles
+  */
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}}
+} as ComponentMeta<typeof {{pascalCase name}}>;
+
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => <{{pascalCase name}} {...args} />;
+
+export const Primary = Template.bind({});
+
+Primary.args = {
+  /*
+  * Args from {{pascalCase name}}Props can be filled out here for
+  * a Dynamic Story Board
+  */
+};
